@@ -1,1 +1,0 @@
-hunpos-tag.exe model_TagPer < input.txt > output.txt

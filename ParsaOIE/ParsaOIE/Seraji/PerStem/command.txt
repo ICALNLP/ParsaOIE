@@ -1,1 +1,0 @@
-perl perstem.pl < input.txt > output.txt

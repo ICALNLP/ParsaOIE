@@ -1,5 +1,0 @@
-هوا	N_SING	
-سرد	ADJ	
-شد	V_COP	
-.	DELM	
-

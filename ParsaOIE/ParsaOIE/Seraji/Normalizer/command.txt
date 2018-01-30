@@ -1,3 +1,0 @@
-gem install  virastar
-
-ruby pre_per.rb input.txt > output.txt
