@@ -1,0 +1,11 @@
+java -cp anna-3.3.jar is2.parser.Parser -train <trainingdata> -model <modelfile>
+
+java -Xmx3G -cp anna-3.61.jar is2.parser.Parser -train train.conll -model MY-MODEL
+
+java -Xmx3G -cp anna-3.61.jar is2.parser.Parser -train CONLL2009.txt -model MY-MODEL
+
+
+
+Final command for parsper 2009 formated:
+
+java -Xmx3G -cp anna-3.61.jar is2.parser.Parser -train train.Conll2009.txt -model MY-MODEL

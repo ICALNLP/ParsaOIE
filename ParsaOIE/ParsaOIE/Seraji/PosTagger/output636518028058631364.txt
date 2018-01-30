@@ -1,0 +1,6 @@
+علی	N_SING	
+در	P	
+خانه	N_SING	
+آبی	ADJ	
+شد	V_COP	
+

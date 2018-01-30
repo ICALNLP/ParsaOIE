@@ -1,0 +1,14 @@
+﻿{.rel {arg1 link-nsubj link-nsubjpass}{DOBJ link-dobj}{arg2 link-prep}}	(arg1; arg2; DOBJ .rel cat-verb)
+<<CATS>>
+quote	exp-گفت	exp-گو	exp-فرمود	exp-فرما	exp-نوشت	exp-نویس	exp-افزود	exp-افز
+AndOr	exp-و	exp-یا
+Other	exp-دیگر	exp-سایر
+Similarity	exp-مانند	exp-همچون	exp-مثل	exp-نظیر
+Who	exp-کسی	exp-کیست
+Che	exp-چه
+Beh	exp-به
+Except	exp-جز
+UnivQ	exp-هر	exp-همه	exp-تمام	exp-کلیه	exp-جمیع	exp-همگی	exp-هرگونه
+Ast	exp-است	exp-بود	exp-هست
+verb	exp-lvc	exp-aux	exp-auxpass	exp-acomp	exp-pobj	exp-prt
+mosnad	exp-pobj	exp-amod	exp-poss	exp-num	exp-quantmod

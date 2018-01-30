@@ -1,0 +1,1 @@
+java -Xmx1G -cp anna-3.61.jar is2.parser.Parser -model model-all -test input.conll -out output.conll

@@ -1,0 +1,4 @@
+حسن	N_SING	
+آمد	V_PA	
+.	DELM	
+

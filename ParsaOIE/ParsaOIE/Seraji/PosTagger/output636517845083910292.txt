@@ -1,0 +1,25 @@
+اگرچه	CON	
+خریداری	N_SING	
+این	DET	
+قطعات	N_PL	
+و	CON	
+اضافات	N_PL	
+می‌تواند	V_PRS	
+مبلغ	N_SING	
+پرداختی	ADJ	
+شما	PRO	
+را	CLITIC	
+افزایش	N_SING	
+دهد	V_SUB	
+اما	CON	
+در	P	
+دراز	ADJ	
+مدت	N_SING	
+سبب	N_SING	
+کاهش	N_SING	
+هزینه‌های	N_PL	
+خودروی	N_SING	
+شما	PRO	
+می‌شوند	V_COP	
+.	DELM	
+

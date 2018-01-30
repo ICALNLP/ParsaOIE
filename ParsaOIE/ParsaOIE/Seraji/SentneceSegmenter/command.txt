@@ -1,0 +1,5 @@
+perl fa_sent.pl < input.txt > output.txt
+
+
+
+perl fa_sent.pl < input.txt  | perl fa_tok.pl > output.txt

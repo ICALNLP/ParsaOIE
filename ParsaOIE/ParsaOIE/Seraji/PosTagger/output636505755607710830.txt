@@ -1,0 +1,8 @@
+من	PRO	
+علی	N_SING	
+را	CLITIC	
+در	P	
+کوچه	N_SING	
+دیدم	V_PA	
+.	DELM	
+

@@ -1,0 +1,23 @@
+گاها	N_PL	
+قطعات	N_PL	
+موجود	ADJ	
+در	P	
+بازار	N_SING	
+و	CON	
+نمایندگی‌ها	N_PL	
+بسیار	ADV	
+به	P	
+درد	N_SING	
+بخور	V_IMP	
+هستند	V_COP	
+و	CON	
+می‌توانند	V_PRS	
+عمر	N_SING	
+کاری	N_SING	
+خودروی	N_SING	
+شما	PRO	
+را	CLITIC	
+افزایش	N_SING	
+دهند	V_SUB	
+.	DELM	
+

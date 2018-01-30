@@ -1,0 +1,4 @@
+{.rel {arg1 link-SBJ}{arg2 link-ADV}}	(arg1;arg2;.rel cat-verb)
+{.rel {arg1 link-SBJ}{arg2 link-OBJ}}	(arg1;arg2;.rel cat-verb)
+<<CATS>>
+verb	exp-NVE	exp-VPRT	exp-POSDEP	exp-MOZ	exp-TAM	exp-NPOSTMOD	exp-NPP	exp-VPP
