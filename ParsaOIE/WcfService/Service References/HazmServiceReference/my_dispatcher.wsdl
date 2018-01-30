@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://127.0.0.1/simple.wsdl" name="my_dispatcher" targetNamespace="http://127.0.0.1/simple.wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" />
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://127.0.0.1/simple.wsdl">
+      <xsd:element name="Parse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ParseResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WordTokenizer">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WordTokenizerResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="tns:ArrayOfWordTokenizerResponseresp" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfWordTokenizerResponseresp">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="retVal" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Normalizer">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="NormalizerResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SentenceTokenizer">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SentenceTokenizerResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="tns:ArrayOfSentenceTokenizerResponseresp" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfSentenceTokenizerResponseresp">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="retVal" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Chunk">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ChunkResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PosTag2">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PosTag2Response">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="tns:ArrayOfPosTag2Responseresp" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfPosTag2Responseresp">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="tag" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Stem">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="StemResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PosTag">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PosTagResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="tns:ArrayOfPosTagResponseresp" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfPosTagResponseresp">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="tag" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Lemmatize">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="text" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="LemmatizeResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="resp" type="xsd:string" />
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ParseInput">
+    <wsdl:part name="parameters" element="tns:Parse" />
+  </wsdl:message>
+  <wsdl:message name="ParseOutput">
+    <wsdl:part name="parameters" element="tns:ParseResponse" />
+  </wsdl:message>
+  <wsdl:message name="WordTokenizerInput">
+    <wsdl:part name="parameters" element="tns:WordTokenizer" />
+  </wsdl:message>
+  <wsdl:message name="WordTokenizerOutput">
+    <wsdl:part name="parameters" element="tns:WordTokenizerResponse" />
+  </wsdl:message>
+  <wsdl:message name="NormalizerInput">
+    <wsdl:part name="parameters" element="tns:Normalizer" />
+  </wsdl:message>
+  <wsdl:message name="NormalizerOutput">
+    <wsdl:part name="parameters" element="tns:NormalizerResponse" />
+  </wsdl:message>
+  <wsdl:message name="SentenceTokenizerInput">
+    <wsdl:part name="parameters" element="tns:SentenceTokenizer" />
+  </wsdl:message>
+  <wsdl:message name="SentenceTokenizerOutput">
+    <wsdl:part name="parameters" element="tns:SentenceTokenizerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChunkInput">
+    <wsdl:part name="parameters" element="tns:Chunk" />
+  </wsdl:message>
+  <wsdl:message name="ChunkOutput">
+    <wsdl:part name="parameters" element="tns:ChunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="PosTag2Input">
+    <wsdl:part name="parameters" element="tns:PosTag2" />
+  </wsdl:message>
+  <wsdl:message name="PosTag2Output">
+    <wsdl:part name="parameters" element="tns:PosTag2Response" />
+  </wsdl:message>
+  <wsdl:message name="StemInput">
+    <wsdl:part name="parameters" element="tns:Stem" />
+  </wsdl:message>
+  <wsdl:message name="StemOutput">
+    <wsdl:part name="parameters" element="tns:StemResponse" />
+  </wsdl:message>
+  <wsdl:message name="PosTagInput">
+    <wsdl:part name="parameters" element="tns:PosTag" />
+  </wsdl:message>
+  <wsdl:message name="PosTagOutput">
+    <wsdl:part name="parameters" element="tns:PosTagResponse" />
+  </wsdl:message>
+  <wsdl:message name="LemmatizeInput">
+    <wsdl:part name="parameters" element="tns:Lemmatize" />
+  </wsdl:message>
+  <wsdl:message name="LemmatizeOutput">
+    <wsdl:part name="parameters" element="tns:LemmatizeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="my_dispatcherPortType">
+    <wsdl:operation name="Parse">
+      <wsdl:input message="tns:ParseInput" />
+      <wsdl:output message="tns:ParseOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="WordTokenizer">
+      <wsdl:input message="tns:WordTokenizerInput" />
+      <wsdl:output message="tns:WordTokenizerOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="Normalizer">
+      <wsdl:input message="tns:NormalizerInput" />
+      <wsdl:output message="tns:NormalizerOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="SentenceTokenizer">
+      <wsdl:input message="tns:SentenceTokenizerInput" />
+      <wsdl:output message="tns:SentenceTokenizerOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="Chunk">
+      <wsdl:input message="tns:ChunkInput" />
+      <wsdl:output message="tns:ChunkOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="PosTag2">
+      <wsdl:input message="tns:PosTag2Input" />
+      <wsdl:output message="tns:PosTag2Output" />
+    </wsdl:operation>
+    <wsdl:operation name="Stem">
+      <wsdl:input message="tns:StemInput" />
+      <wsdl:output message="tns:StemOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="PosTag">
+      <wsdl:input message="tns:PosTagInput" />
+      <wsdl:output message="tns:PosTagOutput" />
+    </wsdl:operation>
+    <wsdl:operation name="Lemmatize">
+      <wsdl:input message="tns:LemmatizeInput" />
+      <wsdl:output message="tns:LemmatizeOutput" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="my_dispatcherBinding" type="tns:my_dispatcherPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Parse">
+      <soap:operation soapAction="http://127.0.0.1:8888/Parse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WordTokenizer">
+      <soap:operation soapAction="http://127.0.0.1:8888/WordTokenizer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Normalizer">
+      <soap:operation soapAction="http://127.0.0.1:8888/Normalizer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SentenceTokenizer">
+      <soap:operation soapAction="http://127.0.0.1:8888/SentenceTokenizer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Chunk">
+      <soap:operation soapAction="http://127.0.0.1:8888/Chunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PosTag2">
+      <soap:operation soapAction="http://127.0.0.1:8888/PosTag2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Stem">
+      <soap:operation soapAction="http://127.0.0.1:8888/Stem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PosTag">
+      <soap:operation soapAction="http://127.0.0.1:8888/PosTag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lemmatize">
+      <soap:operation soapAction="http://127.0.0.1:8888/Lemmatize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="my_dispatcherService">
+    <wsdl:documentation>
+    </wsdl:documentation>
+    <wsdl:port name="my_dispatcher" binding="tns:my_dispatcherBinding">
+      <soap:address location="http://127.0.0.1:8888/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
